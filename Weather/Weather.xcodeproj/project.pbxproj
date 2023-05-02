@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		99E9B1EF2A00D5B400BC4C6D /* Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E9B1E62A00D5B300BC4C6D /* Weather.framework */; };
 		99E9B1F42A00D5B400BC4C6D /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B1F32A00D5B400BC4C6D /* WeatherTests.swift */; };
-		99E9B1F52A00D5B400BC4C6D /* Weather.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E9B1E92A00D5B300BC4C6D /* Weather.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E9B2002A00EE2400BC4C6D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B1FF2A00EE2400BC4C6D /* City.swift */; };
+		99E9B2022A00EE9000BC4C6D /* CityFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B2012A00EE9000BC4C6D /* CityFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +25,10 @@
 
 /* Begin PBXFileReference section */
 		99E9B1E62A00D5B300BC4C6D /* Weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99E9B1E92A00D5B300BC4C6D /* Weather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		99E9B1EE2A00D5B400BC4C6D /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E9B1F32A00D5B400BC4C6D /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
+		99E9B1FF2A00EE2400BC4C6D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		99E9B2012A00EE9000BC4C6D /* CityFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,7 @@
 		99E9B1E82A00D5B300BC4C6D /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				99E9B1E92A00D5B300BC4C6D /* Weather.h */,
+				99E9B1FE2A00D98900BC4C6D /* Search City Feature */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -82,6 +84,15 @@
 			path = WeatherTests;
 			sourceTree = "<group>";
 		};
+		99E9B1FE2A00D98900BC4C6D /* Search City Feature */ = {
+			isa = PBXGroup;
+			children = (
+				99E9B1FF2A00EE2400BC4C6D /* City.swift */,
+				99E9B2012A00EE9000BC4C6D /* CityFinder.swift */,
+			);
+			path = "Search City Feature";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -89,7 +100,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E9B1F52A00D5B400BC4C6D /* Weather.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +154,7 @@
 				TargetAttributes = {
 					99E9B1E52A00D5B300BC4C6D = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					99E9B1ED2A00D5B400BC4C6D = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -191,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E9B2022A00EE9000BC4C6D /* CityFinder.swift in Sources */,
+				99E9B2002A00EE2400BC4C6D /* City.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +349,7 @@
 		99E9B1F92A00D5B400BC4C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -355,6 +369,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +378,7 @@
 		99E9B1FA2A00D5B400BC4C6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -390,6 +406,7 @@
 		99E9B1FC2A00D5B400BC4C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -405,6 +422,7 @@
 		99E9B1FD2A00D5B400BC4C6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
