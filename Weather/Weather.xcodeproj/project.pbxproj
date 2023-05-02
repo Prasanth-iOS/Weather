@@ -12,6 +12,7 @@
 		99E9B2002A00EE2400BC4C6D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B1FF2A00EE2400BC4C6D /* City.swift */; };
 		99E9B2022A00EE9000BC4C6D /* CityFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B2012A00EE9000BC4C6D /* CityFinder.swift */; };
 		99E9B2052A00FF7100BC4C6D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B2042A00FF7100BC4C6D /* HTTPClient.swift */; };
+		99E9B2082A0100DD00BC4C6D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B2072A0100DD00BC4C6D /* URLSessionHTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		99E9B1FF2A00EE2400BC4C6D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		99E9B2012A00EE9000BC4C6D /* CityFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFinder.swift; sourceTree = "<group>"; };
 		99E9B2042A00FF7100BC4C6D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		99E9B2072A0100DD00BC4C6D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		99E9B1E82A00D5B300BC4C6D /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				99E9B2062A0100B500BC4C6D /* Shared API Infra */,
 				99E9B2032A00FF4500BC4C6D /* Shared API */,
 				99E9B1FE2A00D98900BC4C6D /* Search City Feature */,
 			);
@@ -102,6 +105,14 @@
 				99E9B2042A00FF7100BC4C6D /* HTTPClient.swift */,
 			);
 			path = "Shared API";
+			sourceTree = "<group>";
+		};
+		99E9B2062A0100B500BC4C6D /* Shared API Infra */ = {
+			isa = PBXGroup;
+			children = (
+				99E9B2072A0100DD00BC4C6D /* URLSessionHTTPClient.swift */,
+			);
+			path = "Shared API Infra";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				99E9B2022A00EE9000BC4C6D /* CityFinder.swift in Sources */,
 				99E9B2002A00EE2400BC4C6D /* City.swift in Sources */,
 				99E9B2052A00FF7100BC4C6D /* HTTPClient.swift in Sources */,
+				99E9B2082A0100DD00BC4C6D /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
