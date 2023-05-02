@@ -13,6 +13,9 @@
 		99E9B2022A00EE9000BC4C6D /* CityFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B2012A00EE9000BC4C6D /* CityFinder.swift */; };
 		99E9B2052A00FF7100BC4C6D /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B2042A00FF7100BC4C6D /* HTTPClient.swift */; };
 		99E9B2082A0100DD00BC4C6D /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B2072A0100DD00BC4C6D /* URLSessionHTTPClient.swift */; };
+		99E9B20C2A0176F000BC4C6D /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B20B2A0176EF00BC4C6D /* HTTPURLResponse+StatusCode.swift */; };
+		99E9B20E2A01773500BC4C6D /* RemoteCityFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B20D2A01773500BC4C6D /* RemoteCityFinder.swift */; };
+		99E9B2102A017FFE00BC4C6D /* CityFinderEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E9B20F2A017FFE00BC4C6D /* CityFinderEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		99E9B2012A00EE9000BC4C6D /* CityFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFinder.swift; sourceTree = "<group>"; };
 		99E9B2042A00FF7100BC4C6D /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		99E9B2072A0100DD00BC4C6D /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		99E9B20B2A0176EF00BC4C6D /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
+		99E9B20D2A01773500BC4C6D /* RemoteCityFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCityFinder.swift; sourceTree = "<group>"; };
+		99E9B20F2A017FFE00BC4C6D /* CityFinderEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFinderEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +81,10 @@
 		99E9B1E82A00D5B300BC4C6D /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				99E9B2092A0137FC00BC4C6D /* City Finder API */,
 				99E9B2062A0100B500BC4C6D /* Shared API Infra */,
 				99E9B2032A00FF4500BC4C6D /* Shared API */,
-				99E9B1FE2A00D98900BC4C6D /* Search City Feature */,
+				99E9B1FE2A00D98900BC4C6D /* City Finder Feature */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -90,13 +97,13 @@
 			path = WeatherTests;
 			sourceTree = "<group>";
 		};
-		99E9B1FE2A00D98900BC4C6D /* Search City Feature */ = {
+		99E9B1FE2A00D98900BC4C6D /* City Finder Feature */ = {
 			isa = PBXGroup;
 			children = (
 				99E9B1FF2A00EE2400BC4C6D /* City.swift */,
 				99E9B2012A00EE9000BC4C6D /* CityFinder.swift */,
 			);
-			path = "Search City Feature";
+			path = "City Finder Feature";
 			sourceTree = "<group>";
 		};
 		99E9B2032A00FF4500BC4C6D /* Shared API */ = {
@@ -113,6 +120,24 @@
 				99E9B2072A0100DD00BC4C6D /* URLSessionHTTPClient.swift */,
 			);
 			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		99E9B2092A0137FC00BC4C6D /* City Finder API */ = {
+			isa = PBXGroup;
+			children = (
+				99E9B20A2A0176C900BC4C6D /* Helpers */,
+				99E9B20D2A01773500BC4C6D /* RemoteCityFinder.swift */,
+				99E9B20F2A017FFE00BC4C6D /* CityFinderEndpoint.swift */,
+			);
+			path = "City Finder API";
+			sourceTree = "<group>";
+		};
+		99E9B20A2A0176C900BC4C6D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				99E9B20B2A0176EF00BC4C6D /* HTTPURLResponse+StatusCode.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +251,9 @@
 			files = (
 				99E9B2022A00EE9000BC4C6D /* CityFinder.swift in Sources */,
 				99E9B2002A00EE2400BC4C6D /* City.swift in Sources */,
+				99E9B20E2A01773500BC4C6D /* RemoteCityFinder.swift in Sources */,
+				99E9B2102A017FFE00BC4C6D /* CityFinderEndpoint.swift in Sources */,
+				99E9B20C2A0176F000BC4C6D /* HTTPURLResponse+StatusCode.swift in Sources */,
 				99E9B2052A00FF7100BC4C6D /* HTTPClient.swift in Sources */,
 				99E9B2082A0100DD00BC4C6D /* URLSessionHTTPClient.swift in Sources */,
 			);
