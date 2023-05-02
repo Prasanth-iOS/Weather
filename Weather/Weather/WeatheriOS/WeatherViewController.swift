@@ -7,11 +7,11 @@
 
 import UIKit
 
-class WeatherViewController: UIViewController {
+public final class WeatherViewController: UIViewController {
 
-    let searchVC = UISearchController(searchResultsController: CityResultViewController())
+    public var searchVC: UISearchController?
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Weather"

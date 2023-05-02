@@ -7,10 +7,10 @@
 
 import Foundation
 
-final class CityResultViewModel {
+public final class CityResultViewModel {
     let city: CityElement
 
-    init(city: CityElement) {
+    public init(city: CityElement) {
         self.city = city
     }
 
