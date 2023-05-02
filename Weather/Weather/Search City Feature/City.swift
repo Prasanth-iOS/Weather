@@ -8,11 +8,11 @@
 import Foundation
 
 // MARK: - CityElement
-struct CityElement: Codable {
-    let name: String
-    let localNames: [String: String]?
-    let lat, lon: Double
-    let country, state: String
+public struct CityElement: Codable {
+    public let name: String
+    public let localNames: [String: String]?
+    public let lat, lon: Double
+    public let country, state: String
 
     enum CodingKeys: String, CodingKey {
         case name
@@ -21,5 +21,5 @@ struct CityElement: Codable {
     }
 }
 
-typealias City = [CityElement]
+public typealias City = [CityElement]
 

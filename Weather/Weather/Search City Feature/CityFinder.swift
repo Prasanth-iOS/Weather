@@ -7,8 +7,8 @@
 
 import Foundation
 
-typealias SearchCityResult = Result<City, Error>
+public typealias SearchCityResult = Result<City, Error>
 
-protocol CityFinder {
+public protocol CityFinder {
     func search(_ text: String, completion: @escaping (SearchCityResult) -> Void)
 }
