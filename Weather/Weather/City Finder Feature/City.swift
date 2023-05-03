@@ -12,7 +12,7 @@ public struct CityElement: Codable {
     public let name: String
     public let localNames: [String: String]?
     public let lat, lon: Double
-    public let country, state: String
+    public let country, state: String?
 
     enum CodingKeys: String, CodingKey {
         case name
