@@ -14,4 +14,4 @@ The iOS weather application has the following features,
   - Humidity
   
 ## Setup  
-Directly run the WeatherApp. No extra setup required.
+Open the WeatherApp workspace and run the WeatherApp. No extra setup required.
