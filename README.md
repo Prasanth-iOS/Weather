@@ -12,3 +12,6 @@ The iOS weather application has the following features,
   - Weather Condition
   - Wind Speed
   - Humidity
+  
+## Setup  
+Directly run the WeatherApp. No extra setup required.
