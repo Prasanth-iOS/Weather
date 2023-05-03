@@ -7,65 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FCF88E31-2EBC-421F-9577-4D11471484B4"
+            uuid = "E54ACDE7-585D-445F-9E90-7F2CF3928615"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../Weather/Weather/WeatheriOS/City Finder UI/Controllers/CityResultViewController.swift"
+            filePath = "../Weather/Weather/WeatheriOS/Weather UI/Views/Callout.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init(weather:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "41DB744B-8FBA-442E-AE5F-4167DD69B7B9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Weather/Weather/WeatheriOS/WeatherViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "mapView(_:viewFor:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "870D1B71-C0F0-4F05-A871-E1CB0AB978A6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Weather/Weather/WeatheriOS/WeatherViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "mapView(_:didSelect:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "63C52AEB-314D-4A42-A4A7-62242EB1EFA7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Weather/Weather/City Finder API/RemoteCityFinder.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "search(_:completion:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E54ACDE7-585D-445F-9E90-7F2CF3928615 - 953bf5a485d70bb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.Annotation.init(weather: Weather.CurrentWeather) -&gt; Weather.Annotation"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m_ambin05287/Documents/Internal/Workout/WeatherApp_Kaplan/Weather/Weather/WeatheriOS/Weather%20UI/Views/Callout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "2150">
+               </Location>
+               <Location
+                  uuid = "E54ACDE7-585D-445F-9E90-7F2CF3928615 - 953bf5a485d70b98"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Weather.Annotation.init(weather: Weather.CurrentWeather) -&gt; Weather.Annotation"
+                  moduleName = "Weather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/m_ambin05287/Documents/Internal/Workout/WeatherApp_Kaplan/Weather/Weather/WeatheriOS/Weather%20UI/Views/Callout.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1193">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -29,7 +29,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                                                                    weatherLoader: weatherLoader)
 
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = UINavigationController(rootViewController: weatherViewController)
+        let navigationController = UINavigationController(rootViewController: weatherViewController)
+        navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.backgroundColor = .white
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 
