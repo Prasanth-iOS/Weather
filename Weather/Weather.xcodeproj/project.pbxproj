@@ -92,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				99E9B1E82A00D5B300BC4C6D /* Weather */,
+				99E9B2112A0182A400BC4C6D /* WeatheriOS */,
 				99E9B1F22A00D5B400BC4C6D /* WeatherTests */,
 				99E9B1E72A00D5B300BC4C6D /* Products */,
 			);
@@ -109,14 +110,13 @@
 		99E9B1E82A00D5B300BC4C6D /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				99E9B20A2A0176C900BC4C6D /* Helpers */,
-				99E9B2A62A01DA2D00BC4C6D /* Current Weather API */,
-				99E9B2A12A01D69B00BC4C6D /* Current Weather Feature */,
 				99E9B2032A00FF4500BC4C6D /* Shared API */,
 				99E9B2062A0100B500BC4C6D /* Shared API Infra */,
 				99E9B2092A0137FC00BC4C6D /* City Finder API */,
 				99E9B1FE2A00D98900BC4C6D /* City Finder Feature */,
-				99E9B2112A0182A400BC4C6D /* WeatheriOS */,
+				99E9B20A2A0176C900BC4C6D /* Helpers */,
+				99E9B2A62A01DA2D00BC4C6D /* Current Weather API */,
+				99E9B2A12A01D69B00BC4C6D /* Current Weather Feature */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
