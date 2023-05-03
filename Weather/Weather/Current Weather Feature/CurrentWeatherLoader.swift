@@ -10,5 +10,5 @@ import Foundation
 public typealias CurrentWeatherResult = Result<CurrentWeather, Error>
 
 public protocol CurrentWeatherLoader {
-    func load(_ lat: String, long: String, completion: @escaping (SearchCityResult) -> Void)
+    func load(_ lat: String, long: String, completion: @escaping (CurrentWeatherResult) -> Void)
 }

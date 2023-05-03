@@ -1,13 +1,13 @@
 //
-//  RemoteCityFinder.swift
+//  RemoteCurrentWeatherLoader.swift
 //  Weather
 //
-//  Created by Prasanth on 02/05/23.
+//  Created by Prasanth on 03/05/23.
 //
 
 import Foundation
 
-public final class RemoteCityFinder: CityFinder {
+public final class RemoteCurrentWeatherLoader: CurrentWeatherLoader {
     private let baseURL: URL
     private let appId: String
     private let httpClient: HTTPClient
@@ -18,8 +18,8 @@ public final class RemoteCityFinder: CityFinder {
         self.httpClient = httpClient
     }
 
-    public func search(_ text: String, completion: @escaping (SearchCityResult) -> Void) {
-        let url = CityFinderEndpoint.get(text: text).url(baseURL: baseURL, appId: appId)
+    public func load(_ lat: String, long: String, completion: @escaping (CurrentWeatherResult) -> Void) {
+        let url = CurrentWeatherEndPoint.get(lat: lat, long: long).url(baseURL: baseURL, appId: appId)
 
         httpClient.get(from: url) { result in
             guard let (data, response) = try? result.get() else {
@@ -27,8 +27,8 @@ public final class RemoteCityFinder: CityFinder {
                 return
             }
             do {
-                let cities: [CityElement] = try CommonMapper.map(data, from: response)
-                completion(.success(cities))
+                let currentWeather: CurrentWeather = try CommonMapper.map(data, from: response)
+                completion(.success(currentWeather))
             } catch {
                 completion(.failure(error))
             }
