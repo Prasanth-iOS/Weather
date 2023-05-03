@@ -172,6 +172,7 @@
 		99E9B2112A0182A400BC4C6D /* WeatheriOS */ = {
 			isa = PBXGroup;
 			children = (
+				99E9B2B02A01E04400BC4C6D /* Current Weather UI */,
 				99E9B2122A01944400BC4C6D /* WeatherViewController.swift */,
 				99E9B21E2A01A94600BC4C6D /* City Finder UI */,
 			);
@@ -230,6 +231,13 @@
 				99E9B2A92A01DB6300BC4C6D /* RemoteCurrentWeatherLoader.swift */,
 			);
 			path = "Current Weather API";
+			sourceTree = "<group>";
+		};
+		99E9B2B02A01E04400BC4C6D /* Current Weather UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Current Weather UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

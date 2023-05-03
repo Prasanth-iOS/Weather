@@ -15,9 +15,13 @@ public final class CityResultViewModel {
     }
 
     var title: String {
-        let name = city.name
-        let state = city.state
-        let country = city.country
-        return "\(name), \(state), \(country)"
+        var title = city.name
+        if let state = city.state, state.count > 0 {
+            title += ", \(state)"
+        }
+        if let country = city.country, country.count > 0 {
+            title += ", \(country)"
+        }
+        return title
     }
 }

@@ -24,7 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let session = URLSession(configuration: .ephemeral)
         let client = URLSessionHTTPClient(session: session)
         let cityFinder = RemoteCityFinder(baseURL: url, appId: appId, httpClient: client)
-        let weatherViewController = WeatherUIComposer.composedWith(cityFinder: cityFinder)
+        let weatherLoader = RemoteCurrentWeatherLoader(baseURL: url, appId: appId, httpClient: client)
+        let weatherViewController = WeatherUIComposer.composedWith(cityFinder: cityFinder,
+                                                                   weatherLoader: weatherLoader)
 
         window = UIWindow(windowScene: scene)
         window?.rootViewController = UINavigationController(rootViewController: weatherViewController)

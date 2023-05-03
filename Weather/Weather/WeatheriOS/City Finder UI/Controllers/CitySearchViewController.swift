@@ -16,7 +16,6 @@ public final class CitySearchViewController: UISearchController {
         searchBar.returnKeyType = .search
         searchBar.enablesReturnKeyAutomatically = true
         searchBar.placeholder = "Search City"
-        searchBar.showsCancelButton = true
         searchBar.searchTextField.delegate = self
     }
 

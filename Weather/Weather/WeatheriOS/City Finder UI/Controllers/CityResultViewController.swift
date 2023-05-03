@@ -13,7 +13,7 @@ public final class CityResultViewController: UITableViewController {
             tableView.reloadData()
         }
     }
-    var selection: ((CityElement) -> Void)?
+    public var selection: ((CityElement) -> Void)?
 
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,5 @@ public final class CityResultViewController: UITableViewController {
 
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selection?(tableModel[indexPath.row].city)
-        tableModel = []
     }
 }
